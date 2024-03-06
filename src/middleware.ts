@@ -38,8 +38,8 @@ export default withAuth(
       const ip = req.ip ?? "127.0.0.1";
       try {
         // 速率限制
-        // const { success } = await ratelimit.limit(ip);
-        // if (!success) return NextResponse.json({ error: "Too many requests" });
+        const { success } = await ratelimit.limit(ip);
+        if (!success) return NextResponse.json({ error: "Too many requests" });
 
         return NextResponse.next();
       } catch (error) {
