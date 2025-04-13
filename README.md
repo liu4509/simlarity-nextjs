@@ -7,6 +7,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ```bash
 yarn dev
 ```
+## 效果图
+![similarity](https://github.com/user-attachments/assets/d35cba56-34d0-4c06-8353-652e631fc5dc)
 
 ## idea
   ui 重用组件 - radix 无头组件
